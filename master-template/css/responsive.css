@@ -1,0 +1,101 @@
+
+@media (max-width: 1480px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding: 10px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .end{
+        padding: 15px 3%;
+    }
+}
+
+@media (max-width: 1100px){
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1.1rem
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    
+    .home{
+        height: 144vh;
+    }
+}
+
+@media (max-width: 920px){
+    .about{
+        grid-template-columns: 1 fr;
+    }
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+    
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 840px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+
+    .navlist a.active{
+        color: var(--text-color);
+    }
+    
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .home{
+        height: 144vh;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {}
